@@ -4,7 +4,7 @@ from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 import pandas as pd
 import numpy as np
 
-# Load dataset and preprocessing (same as your EDA step)
+# Load dataset and preprocessing 
 df = pd.read_csv('Books.csv')
 df['Price'] = df['Price'].replace('[£]', '', regex=True).astype(float)
 
